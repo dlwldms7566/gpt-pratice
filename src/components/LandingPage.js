@@ -9,6 +9,13 @@ export default function LandingPage() {
 
     return (
         <div className={styles.container}>
+            <div className={styles.green}>
+                <img
+                    alt="GPT-4 Line Motif"
+                    className="mx-auto"
+                    src="https://images.ctfassets.net/kftzwdyauwt9/b11fba8c-c51f-41c1-e8cd631b6ad8/b8f7e710414712b37d294e01d347cb46/gpt-4-motif.svg?w=3840&q=90"
+                />
+            </div>
             <div className={styles.intro_fullcontainer}>
                 <div className={`${styles.intro_container} ${isMenuOpen ? styles.menu_open : ""}`}>
                     <div className={styles.intro}>
@@ -444,8 +451,7 @@ export default function LandingPage() {
                     <div className={styles.footer_bottom}>
                         <div className={styles.footer_sns}>
                             <a className={styles.sns_element} href="https://x.com/OpenAI" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="17" viewBox="0 0 17 17" fill="none"><g clip-path="url(#a)"><path fill="currentColor"></path></g></svg>
-                            </a>
+                                <svg className={styles.sns_element} xmlns="http://www.w3.org/2000/svg" width="17" viewBox="0 0 17 17" fill="none"><g clip-path="url(#a)"><path fill="currentColor" d="M13.158 2.058h2.248l-4.913 5.435 5.78 7.395h-4.525l-3.545-4.485-4.056 4.485h-2.25l5.255-5.813-5.545-7.017h4.64l3.205 4.1 3.706-4.1Zm-.79 11.527h1.246L5.57 3.293H4.233l8.135 10.292Z"></path></g></svg>                            </a>
                             <a className={styles.sns_element} href="https://www.youtube.com/OpenAI" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="17" viewBox="0 0 17 17" fill="none"><g clip-path="url(#a)"><path fill="currentColor" d="M16.79 5.475s-.156-1.067-.637-1.536c-.61-.617-1.29-.62-1.603-.656-2.238-.158-5.597-.158-5.597-.158h-.006s-3.36 0-5.597.158c-.313.036-.994.039-1.603.656-.481.469-.635 1.536-.635 1.536S.95 6.73.95 7.982v1.174c0 1.252.16 2.507.16 2.507s.156 1.067.634 1.536c.61.617 1.41.596 1.765.662 1.282.118 5.441.154 5.441.154s3.363-.006 5.6-.16c.313-.036.994-.04 1.603-.656.481-.469.638-1.536.638-1.536s.159-1.252.159-2.507V7.982c0-1.252-.16-2.507-.16-2.507ZM7.298 10.58V6.228l4.322 2.184-4.322 2.168Z"></path></g></svg>
                             </a>
