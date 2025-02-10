@@ -1,0 +1,461 @@
+* {
+    font-family: "OpenAI Sans", sans-serif;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.intro_fullcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.intro_container {
+    margin: 0 11px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% - 22px);
+    max-width: 918px;
+    box-sizing: border-box;
+}
+
+.intro {
+    max-width: 918px;
+    width: 100%; 
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 500;
+    height: 71.2734px;
+    letter-spacing: -0.18px;
+    line-height: 23.76px;
+    scroll-margin-top: 76px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    margin: 80px 229px;
+}
+
+/* 메뉴 */
+.menu-open .intro_container {
+    margin: 0;
+    padding: 0 32px;
+    width: calc(100% - 64px); 
+    max-width: 798px;
+}
+
+.menu-open .intro {
+    max-width: 798px;
+    margin-left: 200px; 
+    margin-right: 200px;
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+    .intro_container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .intro {
+        max-width: 100%;
+        margin-left: auto; /* 작은 화면에서는 margin 자동 조정 */
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .intro_container {
+        padding: 0 24px; /* 작은 화면에서는 padding 조절 */
+    }
+    .intro {
+        font-size: 16px; /* 작은 화면에서는 글자 크기 줄이기 */
+        line-height: 22px;
+    }
+}
+
+
+.smalltext {
+    text-align: left;
+    min-height: 363.602px;
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start; 
+    margin-bottom: 40px;
+}
+
+.smalltext_heading {
+    font-size: 30px;
+    height: 39.6016px;
+    letter-spacing: -0.3px;
+    line-height: 39.6px;
+    width: 600px;
+    max-width: 100%;
+    margin-bottom: 21.25px;
+    margin-top: 0px;
+}
+
+.smalltext_content {
+    min-height: 76px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.17px;
+    width: 610px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+/* 메뉴 */
+.menu_open .smalltext_heading {
+    width: 603px;
+}
+
+.menu_open .smalltext_content {
+    width: 603px;
+    font-size: 17px;
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+    .smalltext_heading,
+    .smalltext_content {
+        width: 100%;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .smalltext_heading {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .smalltext_content {
+        font-size: 15px;
+        line-height: 26px;
+        height: auto;
+    }
+}
+
+
+.Built_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+.Built {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr)); 
+    gap: 25px;
+    width: 100%;
+    max-width: 1400px;
+    justify-content: center;
+}
+
+.Built_title {
+    text-align: left;
+    font-size: 22px;
+    font-weight: 500;
+    height: 27.7188px;
+    letter-spacing: -0.22px;
+    line-height: 27.72px;
+    width: 160.82px;
+    margin-bottom: 32px;
+}
+
+.picture_container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    cursor: pointer;
+    width: 100%; 
+    max-width: 326px; 
+    min-width: 144px;
+    aspect-ratio: 1 / 1;
+}
+
+.picture {
+    animation-duration: 0.3s;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; 
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 15px;
+    vertical-align: middle;
+    border-bottom-color: rgb(229, 231, 235);
+    border-radius: 8px;
+}
+
+.picture_caption {
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -0.22px;
+    line-height: 27.72px;
+    width: 100%;
+    max-width: 270px;
+    word-wrap: break-word; 
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.picture_story {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    height: 14px;
+    letter-spacing: normal;
+    line-height: 14px;
+    width: 34.7344px;
+}
+
+/* 메뉴 */
+.menu_open .Built_container {
+    grid-template-columns: repeat(4, minmax(180px, 1fr)); 
+}
+
+.menu_open .picture_container {
+    max-width: calc(100% - 200px);
+}
+
+/* 반응형 */
+@media (max-width: 1200px) {
+    .Built {
+        grid-template-columns: repeat(4, minmax(180px, 1fr)); 
+    }
+}
+
+@media (max-width: 900px) {
+    .Built {
+        grid-template-columns: repeat(4, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .Built {
+        grid-template-columns: repeat(2, minmax(200px, 1fr)); 
+    }
+}
+
+@media (max-width: 500px) {
+    .Built {
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+    }
+}
+
+
+.icon_container {
+    width: 1203px;
+    height: 58.87px;
+}
+
+
+.green {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.green img {
+    height: auto; 
+    max-width: 100%;
+    object-fit: contain; 
+    padding-left: calc((100% - 32px)/12);
+    padding-right: calc((100% - 32px)/12);
+    margin: 0px 32px 100px 32px;
+}
+
+
+.View {
+    color: black; 
+    font-weight: 500;
+}
+
+.View:hover {
+    color: rgba(0, 0, 0, 0.6); 
+}
+
+.contributions {
+    display: flex;  
+    justify-content: flex-start; 
+    align-items: center; 
+    width: 610px; 
+    border-top-color: rgba(0, 0, 0, 0.08);
+    border-top-style: solid;
+    padding-top: 40px;
+}
+
+.bigtext_fullcontainer {
+    margin-top: 60px;
+    padding: 0 32px; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bigtext_container {
+    background-color: rgba(0, 0, 0, 0.04);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0px;
+    margin-bottom: 250px;
+}
+
+.bigtext {
+    font-size: 48px;
+    font-weight: 500;
+    height: auto;
+    text-align: center;
+    width: 800px;
+    margin-bottom: 30px;
+    letter-spacing: -0.96px;
+    line-height: 55.68px;
+}
+
+.twobuttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.round_button {
+    align-items: center;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    background-color: rgba(0, 0, 0, 0.04);
+    border-color: rgb(229, 231, 235);
+    border-radius: 40px;
+    border-style: solid;
+    border-image-width: 1;
+    column-gap: 4.2px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration-line: none;
+    width: 180px;
+    display: flex;
+}
+
+.plain_button {
+    align-items: center;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    border-color: transparent;
+    background: transparent;
+    border-image-width: 1;
+    column-gap: 4.2px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    letter-spacing: normal;
+    width: 148.586px;
+    display: flex;
+    white-space: nowrap;
+}
+
+.arrow {
+    transform: rotate(270deg);
+}
+
+.footer_container {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    text-align: left;
+}
+
+.footer_top {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_column {
+    width: 326px;
+    height: 757.453px;
+    margin-left: 24px;
+}
+
+.footer_column:first-child {
+    margin-left: 0; 
+}
+
+.footer_bottom {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_sns {
+    display: flex;
+    flex-direction: row;
+    width: 1392px;
+    height: 40px;
+    gap: 25px;
+    flex-grow: 0p;
+}
+
+.sns_element {
+    cursor: pointer;
+}
+
+.sns_element:hover {
+    color: black;
+}
+
+.sns_element:visited {
+    color: black;
+}
+
+.footer_date {
+    margin-right: 400px;
+    width: 138.65px;
+    font-size: 14px;
+    flex-grow: 1; /* 가운데 정렬을 유지하면서 가변적으로 크기 조정 */
+    text-align: center;
+    white-space: nowrap; /* 줄 바꿈 방지 */
+    font-weight: 500;
+    letter-spacing: normal;
+}
+
+.round_text {
+    width: 142.672px;
+    height: 14px;
+    white-space: nowrap;
+}
+
+.us {
+    width: 87.336px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-left: 4px;
+    font-size: 14px;
+}

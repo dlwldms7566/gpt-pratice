@@ -1,0 +1,53 @@
+.FooterElement_container {
+    width: 171.250px;
+}
+
+.FooterElement_title {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 15.1624px;
+    font-weight: 500;
+    height: 15.1641px;
+    letter-spacing: normal;
+    text-size-adjust: 100%;
+    width: 171.25px;
+}
+
+.FooterElement_content {
+    column-gap: 24px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15.1624px;
+    font-weight: 500;
+    height: auto;
+    letter-spacing: normal;
+    line-height: 15.1624px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-block-end: 0px;
+    margin-block-start: 20px;
+    margin-bottom: 48px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 20px;
+    padding-bottom: 0px;
+    padding-inline-start: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    row-gap: 24px;
+    text-size-adjust: 100%;
+    unicode-bidi: isolate;
+    width: 171.25px;
+}
+
+.FooterElement_content a {
+    color: rgb(0, 0, 0);
+    text-decoration: none; 
+}
+
+.FooterElement_content a:hover {
+    color: rgba(0, 0, 0, 0.6); 
+}
