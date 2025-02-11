@@ -53,6 +53,7 @@ export default function LandingPage() {
                 <div className={styles.Built}>
                     <div className={styles.picture_container}>
                         <div className={styles.picture}>
+                            <a href="https://openai.com/index/duolingo/">
                             <img alt="Duolingo" data-nosnippet="true" loading="lazy" decoding="async" data-nimg="fill" class="object-cover object-center" sizes="(min-width: 1728px) 1728px, 100vw"
                                 srcset="https://images.ctfassets.net/kftzwdyauwt9/d8ea7257-15af-4ace-fe07371883a6/a6904255f5cc1d78448d989fbcaea0c2/duolingo.png?w=640&amp;q=90&amp;fm=webp 640w,
                 https://images.ctfassets.net/kftzwdyauwt9/d8ea7257-15af-4ace-fe07371883a6/a6904255f5cc1d78448d989fbcaea0c2/duolingo.png?w=750&amp;q=90&amp;fm=webp 750w,
@@ -64,16 +65,22 @@ export default function LandingPage() {
                 https://images.ctfassets.net/kftzwdyauwt9/d8ea7257-15af-4ace-fe07371883a6/a6904255f5cc1d78448d989fbcaea0c2/duolingo.png?w=3840&amp;q=90&amp;fm=webp 3840w"
                                 src="https://images.ctfassets.net/kftzwdyauwt9/d8ea7257-15af-4ace-fe07371883a6/a6904255f5cc1d78448d989fbcaea0c2/duolingo.png?w=3840&amp;q=90&amp;fm=webp"
                                 style={{ width: "100%", height: "100%", objectFit: "contain", color: "transparent" }} />
+                            </a>
                         </div>
-                        <div className={styles.picture_caption}>
+                        <a className={styles.picture_caption} href="https://openai.com/index/duolingo/">
+                        <div>
                             GPT-4 deepens the conversation on Duolingo.
                         </div>
+                        </a>
+                        <a className={styles.picture_story} href="https://openai.com/index/duolingo/">
                         <div className={styles.picture_story}>
                             Story
                         </div>
+                        </a>
                     </div>
                     <div className={styles.picture_container}>
                         <div className={styles.picture}>
+                            <a href="https://openai.com/index/be-my-eyes/">
                             <img alt="Be My Eyes" data-nosnippet="true" loading="lazy" decoding="async" data-nimg="fill" class="object-cover object-center" sizes="(min-width: 1728px) 1728px, 100vw"
                                 srcset="https://images.ctfassets.net/kftzwdyauwt9/7f575e80-c72a-4154-92812d284137/0798d9554fc21e616fded75f2fe3f383/be_my_eyes.png?w=640&amp;q=90&amp;fm=webp 640w,
                 https://images.ctfassets.net/kftzwdyauwt9/7f575e80-c72a-4154-92812d284137/0798d9554fc21e616fded75f2fe3f383/be_my_eyes.png?w=750&amp;q=90&amp;fm=webp 750w,
@@ -85,16 +92,22 @@ export default function LandingPage() {
                 https://images.ctfassets.net/kftzwdyauwt9/7f575e80-c72a-4154-92812d284137/0798d9554fc21e616fded75f2fe3f383/be_my_eyes.png?w=3840&amp;q=90&amp;fm=webp 3840w"
                                 src="https://images.ctfassets.net/kftzwdyauwt9/7f575e80-c72a-4154-92812d284137/0798d9554fc21e616fded75f2fe3f383/be_my_eyes.png?w=3840&amp;q=90&amp;fm=webp"
                                 style={{ width: "100%", height: "100%", objectFit: "contain", color: "transparent" }} />
+                            </a>
                         </div>
-                        <div className={styles.picture_caption}>
+                        <a className={styles.picture_caption} href="https://openai.com/index/be-my-eyes/">
+                        <div>
                             Be My Eyes uses GPT-4 to transform visual accessibility.
                         </div>
-                        <div className={styles.picture_story}>
+                        </a>
+                        <a className={styles.picture_story} href="https://openai.com/index/be-my-eyes/">
+                        <div>
                             Story
                         </div>
+                        </a>
                     </div>
                     <div className={styles.picture_container}>
                         <div className={styles.picture}>
+                        <a href="https://openai.com/index/stripe/">
                             <img alt="Stripe Docs" data-nosnippet="true" loading="lazy" decoding="async" data-nimg="fill" class="object-cover object-center" sizes="(min-width: 1728px) 1728px, 100vw"
                                 srcset="https://images.ctfassets.net/kftzwdyauwt9/6c20363e-30c0-486d-2e9bfa611583/b15f2e43a5a525763c966ab4562a31b2/stripe.jpg?w=640&amp;q=90&amp;fm=webp 640w,
                 https://images.ctfassets.net/kftzwdyauwt9/6c20363e-30c0-486d-2e9bfa611583/b15f2e43a5a525763c966ab4562a31b2/stripe.jpg?w=750&amp;q=90&amp;fm=webp 750w,
@@ -106,15 +119,22 @@ export default function LandingPage() {
                 https://images.ctfassets.net/kftzwdyauwt9/6c20363e-30c0-486d-2e9bfa611583/b15f2e43a5a525763c966ab4562a31b2/stripe.jpg?w=3840&amp;q=90&amp;fm=webp 3840w"
                                 src="https://images.ctfassets.net/kftzwdyauwt9/6c20363e-30c0-486d-2e9bfa611583/b15f2e43a5a525763c966ab4562a31b2/stripe.jpg?w=3840&amp;q=90&amp;fm=webp"
                                 style={{ width: "100%", height: "100%", objectFit: "contain", color: "transparent" }} />
+                        </a>
                         </div>
-                        <div className={styles.picture_caption}>
-                            Stripe leverages GPT-4 to streamline user experience and combat fraud.                    </div>
+                        <a className={styles.picture_caption} href="https://openai.com/index/stripe/">
+                        <div>
+                            Stripe leverages GPT-4 to streamline user experience and combat fraud.
+                        </div>
+                        </a>
+                        <a className={styles.picture_story} href="https://openai.com/index/stripe/">
                         <div className={styles.picture_story}>
                             Story
                         </div>
+                        </a>
                     </div>
                     <div className={styles.picture_container}>
                         <div className={styles.picture}>
+                        <a href="https://openai.com/index/morgan-stanley/">
                             <img alt="morgan stanley" data-nosnippet="true" loading="lazy" decoding="async" data-nimg="fill" class="object-cover object-center" sizes="(min-width: 1728px) 1728px, 100vw"
                                 srcset="https://images.ctfassets.net/kftzwdyauwt9/3ma239JWrlhhzndpxv4bJZ/992e25b552a21cb1d71f045493589ee6/morgan_stanley.png?w=640&amp;q=90&amp;fm=webp 640w,
             https://images.ctfassets.net/kftzwdyauwt9/3ma239JWrlhhzndpxv4bJZ/992e25b552a21cb1d71f045493589ee6/morgan_stanley.png?w=750&amp;q=90&amp;fm=webp 750w,
@@ -126,12 +146,18 @@ export default function LandingPage() {
             https://images.ctfassets.net/kftzwdyauwt9/3ma239JWrlhhzndpxv4bJZ/992e25b552a21cb1d71f045493589ee6/morgan_stanley.png?w=3840&amp;q=90&amp;fm=webp 3840w"
                                 src="https://images.ctfassets.net/kftzwdyauwt9/3ma239JWrlhhzndpxv4bJZ/992e25b552a21cb1d71f045493589ee6/morgan_stanley.png?w=3840&amp;q=90&amp;fm=webp"
                                 style={{ width: "100%", height: "100%", objectFit: "contain", color: "transparent" }} />
+                        </a>
                         </div>
-                        <div className={styles.picture_caption}>
-                            Morgan Stanley wealth management deploys GPT-4 to organize its vast knowledge base.                    </div>
-                        <div className={styles.picture_story}>
+                        <a className={styles.picture_caption} href="https://openai.com/index/morgan-stanley/">
+                        <div>
+                            Morgan Stanley wealth management deploys GPT-4 to organize its vast knowledge base.
+                        </div>
+                        </a>
+                        <a className={styles.picture_story} href="https://openai.com/index/morgan-stanley/">
+                        <div>
                             Story
                         </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -212,16 +238,20 @@ export default function LandingPage() {
                     </div>
                     <div>
                         <div className={styles.twobuttons}>
+                            <a href="https://chatgpt.com/" target="_blank"  style={{ textDecoration: "none" }}>
                             <button className={styles.round_button}>Try on ChatGPT Plus
                                 <svg width="11" style={{ transform: "translate(1px, -1px)" }} viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1.70985 4.5H7.7804M7.7804 4.5V10.5705M7.7804 4.5L0.780396 11.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
                                 </svg>
                             </button>
+                            </a>
+                            <a href="https://openai.com/index/gpt-4-research/" style={{ textDecoration: "none" }}>
                             <button className={styles.plain_button}>View GPT-4 research
                                 <svg className={styles.arrow} xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 10 16" fill="none">
                                     <path d="M0.209209 5.35206C0.488154 5.07312 0.940415 5.07312 1.21936 5.35206L5.00001 9.1327L8.78064 5.35206C9.05958 5.07312 9.51184 5.07312 9.79079 5.35206C10.0697 5.63101 10.0697 6.08327 9.79079 6.36221L5.50509 10.6479C5.37114 10.7819 5.18945 10.8571 5.00001 10.8571C4.81057 10.8571 4.62889 10.7819 4.49494 10.6479L0.20921 6.36222C-0.0697361 6.08327 -0.0697368 5.63101 0.209209 5.35206Z" fill="currentColor"></path>
                                 </svg>
                             </button>
+                            </a>
                         </div>
                     </div>
                 </div>

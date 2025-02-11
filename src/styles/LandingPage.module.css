@@ -213,6 +213,15 @@
     word-wrap: break-word; 
     text-align: left;
     margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.picture_caption:hover {
+    color: black; 
+}
+
+.picture_caption:visited {
+    color: black; 
 }
 
 .picture_story {
@@ -223,6 +232,15 @@
     letter-spacing: normal;
     line-height: 14px;
     width: 34.7344px;
+    text-decoration: none;
+}
+
+.picture_story:hover {
+    color: black; 
+}
+
+.picture_story:visited {
+    color: black; 
 }
 
 /* 메뉴 */
@@ -358,6 +376,10 @@
     display: flex;
 }
 
+.round_button:hover {
+    background-color: #CDCDCD;;
+}
+
 .plain_button {
     align-items: center;
     animation-duration: 0.2s;
@@ -374,6 +396,10 @@
     width: 148.586px;
     display: flex;
     white-space: nowrap;
+}
+
+.plain_button:hover {
+    color: rgba(0, 0, 0, 0.6); 
 }
 
 .arrow {
