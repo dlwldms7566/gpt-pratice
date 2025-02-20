@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "../styles/SignUp.module.css";
-import Login from "./Login";
 
-function Signup() {
+function Login() {
     const [formData, setFormData] = useState({
-        name: "",
         email: "",
         password: "",
     });
@@ -27,20 +25,8 @@ function Signup() {
     return (
         <div className={styles.container}>
             <div className={styles.signupBox}>
-                <h2 className={styles.title}>계정 만들기</h2>
+                <h2 className={styles.title}>다시 오신 걸 환영합니다</h2>
                 <form onSubmit={handleSubmit} className={styles.form}>
-                    {/* 이름 입력 */}
-                    <div>
-                        <input
-                            type="text"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleChange}
-                            required
-                            className={styles.input}
-                            placeholder="이름"
-                        />
-                    </div>
 
                     {/* 이메일 입력 */}
                     <div>
@@ -70,13 +56,13 @@ function Signup() {
 
                     {/* 회원가입 버튼 */}
                     <button type="submit" className={styles.button}>
-                        회원가입
+                        로그인
                     </button>
                 </form>
                 <p className={styles.loginText}>
-                    이미 계정이 있으신가요?{" "}
-                    <span className={styles.loginLink} onClick={() => navigate("/login")}>
-                        로그인
+                    계정이 없으신가요? {" "}
+                    <span className={styles.loginLink} onClick={() => navigate("/SignUp")}>
+                    회원 가입
                     </span>
                 </p>
                 <div className={styles.bottom}>
@@ -93,4 +79,4 @@ function Signup() {
     );
 }
 
-export default Signup;
+export default Login;

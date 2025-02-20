@@ -6,10 +6,11 @@ import sidebarIcon from "../assets/sidebar-icon-op.png";
 import sidebarIconActive from "../assets/sidebar-icon-cl.png";
 import { LuRepeat2 } from "react-icons/lu";
 import { IoIosArrowForward } from "react-icons/io";
-// import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,9 +34,7 @@ export function Header() {
         <div className="search-icon">
           <CgSearch />
         </div>
-        {/* <Link to="/SignUp"> */}
-        <button className="login-button">Log in</button>
-        {/* </Link> */}
+        <button className="login-button" onClick={() => navigate("/login")}>Log in</button>
       </div>
     </header>
   );
