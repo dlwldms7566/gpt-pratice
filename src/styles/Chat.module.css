@@ -1,0 +1,395 @@
+body {
+    font-family: "Arial", sans-serif; 
+    background-color: white;
+  }
+  
+  .ChatIcon {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #606060; 
+    font-size: 20px; 
+    cursor: pointer;
+    background: transparent; 
+    border: none; 
+    padding: 10px; 
+    border-radius: 10px; 
+    transition: background 0.2s ease-in-out; 
+    top: 8px;  
+    left: 12px;
+  }
+  
+  .ChatIcon:hover {
+    background: #e7e7e7;
+  }
+  
+  /* 호버 시 말풍선 추가 */
+  .ChatIcon::after {
+    content: "새 채팅"; /* 표시할 텍스트 */
+    position: absolute;
+    bottom: -45px; /* 아이콘 아래 위치 */
+    left: 80%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+    z-index: 1000; /* 다른 요소 위에 표시 */
+  }
+  
+  .ChatIcon:hover::before {
+    content: "";
+    position: absolute;
+    bottom: -12px;  /* 말풍선과의 간격 */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent #333 transparent;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  }
+  
+  .ChatIcon:hover::after,
+  .ChatIcon:hover::before {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+    .btn {
+      position: absolute; 
+      top: 10px; 
+      left: 53px; 
+      color: #606060; 
+      background: transparent; 
+      border: none; 
+      font-size: 17.5px; 
+      font-weight: 700;
+      display: flex; 
+      align-items: center;
+      gap: 5px; 
+      padding: 10px 10px; 
+      cursor: pointer;
+      border-radius: 5px; 
+      transition: background 0.2s ease-in-out; 
+    }
+    
+    .btnIcon {
+      color: #b8b8b8; 
+      font-size: 16px; 
+    }
+    
+    .btn:hover {
+      background: #f0f0f0;
+    }
+  
+    .LogIn {
+      position: absolute; 
+      top: 10px; 
+      right: 114px; 
+      color: white; 
+      background: black; 
+      border: none; 
+      font-size: 14px; 
+      display: flex; 
+      align-items: center;
+      padding: 9.5px 14px; 
+      cursor: pointer;
+      border-radius: 20px; 
+    }
+  
+    .Join {
+      position: absolute; 
+      top: 10px; 
+      right: 16px; 
+      color: black; 
+      background: white; 
+      border: 1px solid #ccc;
+      font-size: 14px; 
+      display: flex; 
+      align-items: center;
+      padding: 9px 14px; 
+      cursor: pointer;
+      border-radius: 20px;
+    }
+    
+    .txt {
+      font-size: 30px;
+      margin-top: 165px;
+      margin-bottom: 25px;
+      font-weight: 600;
+      text-align: center;
+    }
+  
+  .ChatInputContainer.fixedBottom {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    max-width: 750px;
+    height: 103px;
+    background: white;
+    border-top: 1px solid #ccc;
+    padding: 6px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+    .ChatInputContainer {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding: 6px;
+      background: white;
+      border-top: 1px solid #ccc;
+      width: 100vw;
+      max-width: 750px; /* 최대 너비 설정 */
+      height: 103px; /* 입력창 컨테이너 높이 증가 */
+      margin: 0 auto; /* 가운데 정렬 */
+      border-radius: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+    
+    .ChatInput {
+      align-self: flex-start; /* 왼쪽 정렬 */
+      width: 90%; /* 너비를 적절히 조정 */
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      font-size: 16px;
+      caret-color: #333;
+      caret-width: 10px;
+    }
+  
+    .ChatInput::placeholder {
+      color: #c1c1c1; /* 원하는 색으로 지정 */
+  }
+  
+    .attach {
+      position: absolute; 
+      bottom: 10px; 
+      left: 10px; 
+      color: rgb(99, 99, 99); 
+      background: white; 
+      border: 1px solid #dadada;;
+      font-size: 13px; 
+      font-weight: bold;
+      display: flex; 
+      align-items: center;
+      padding: 9.3px 12px; 
+      cursor: pointer;
+      border-radius: 20px;
+    }
+  
+    .attachIcon {
+      font-size: 12px;
+      display: inline-block;
+      transform: translateX(-3px);
+    }
+  
+    .search {
+      position: absolute; 
+      bottom: 10px; 
+      left: 80px; 
+      color: rgb(99, 99, 99);
+      background: white; 
+      border: 1px solid #dadada;
+      font-size: 13px; 
+      display: flex; 
+      align-items: center;
+      padding: 9px 11px; 
+      cursor: pointer;
+      border-radius: 20px;
+    }
+  
+    .searchIcon2 {
+      font-size: 18px;
+      display: inline-block;
+      transform: translateX(-3px);
+    }
+  
+    .reason {
+      position: absolute; 
+      bottom: 10px; 
+      left: 155px; 
+      color: rgb(99, 99, 99); 
+      background: white; 
+      border: 1px solid #dadada;
+      font-size: 13px; 
+      display: flex; 
+      align-items: center;
+      padding: 7px 9.5px; 
+      cursor: pointer;
+      border-radius: 20px;
+    }
+  
+    .reasonIcon {
+      font-size: 22px;
+      display: inline-block;
+      transform: translateX(-2px);
+    }
+  
+    .VoiceButton {
+      position: absolute;
+      right: 10px; 
+      bottom: 10px; 
+      background: #000000;
+      color: white;
+      border: none;
+      padding: 8px 13px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: bold;
+    }
+  
+    .voiceIcon {
+      font-size: 18px;
+      display: inline-block;
+      transform: translateX(-2px) translateY(2px);
+    }
+  
+    .SendButton {
+      font-size: 17px;
+      position: absolute;
+      right: 10px; 
+      bottom: 10px; 
+      background: #000000;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      width: 36px; 
+      height: 36px; 
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+    }
+  
+    .ChatMenu {
+      display: flex; 
+      gap: 7px; 
+      align-items: center;
+      justify-content: center; 
+    }
+  
+    .ChatMenu button {
+      color: rgb(99, 99, 99); 
+      background: white; 
+      border: 1px solid #dadada;
+      font-size: 13px; 
+      padding: 10px 12px; 
+      cursor: pointer;
+      border-radius: 20px;
+      display: flex; 
+      align-items: center; 
+      justify-content: center;
+      height: 40px; 
+      gap: 5px;
+    }
+  
+    .codeIcon {
+      font-size: 16px;
+      display: inline-block;
+      color: rgb(70, 52, 228); 
+    }
+  
+    .textIcon {
+      font-size: 18px;
+      display: inline-block;
+      color: rgb(225, 145, 32); 
+    }
+    
+    .imageIcon {
+      font-size: 19px;
+      display: inline-block;
+      color: rgb(85, 67, 249);
+    }
+  
+    .planIcon {
+      font-size: 22px;
+      display: inline-block;
+      color: rgb(223, 190, 143);
+    }
+  
+    .adviceIcon {
+      font-size: 16px;
+      display: inline-block;
+      color: rgb(102, 217, 248);
+    }
+  
+    .refer {
+      position: fixed; 
+      bottom: 5px; 
+      left: 50%;
+      transform: translateX(-50%); 
+      text-align: center; 
+      font-size: 14px;
+      color: #6c6c6c; 
+  }
+  
+  .refer span {
+      color: #000000; /* 밑줄과 색깔을 다르게 적용할 부분의 색상 */
+      text-decoration: underline; /* 밑줄 */
+  }
+  
+  .ChatContainer {
+    width: 100vw; /* 화면 전체 너비 */
+    height: 380px; /* 고정 높이 */
+    padding: 0px 270px; 
+    overflow-y: auto; /* 내부 스크롤 활성화 */
+    box-sizing: border-box; /* 패딩 포함 크기 계산 */
+    position: relative;
+    margin: 80px auto 0;
+  }
+  
+  .ChatContainer::-webkit-scrollbar {
+    width: 8px; /* 스크롤바의 너비 */
+    position: absolute;
+    right: 0;
+  }
+  
+  .ChatContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(159, 159, 159, 0.2); /* 스크롤바의 색상 */
+    border-radius: 6px;
+  }
+  
+  .ChatContainer::-webkit-scrollbar-track {
+    background-color: transparent; /* 스크롤 트랙 색상 */
+  }
+  
+  .message {
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding: 3px 18px;
+    border-radius: 25px;
+    display: block; 
+    max-width: fit-content;
+    word-wrap: break-word;
+    width: auto;
+    line-height: 0.5;
+  }
+  
+  .message.user {
+    background-color: #f1f1f1; /* 사용자 메시지 배경 */
+    text-align: right;
+    margin-left: auto;
+  }
+  
+  .message.gpt {
+    text-align: left;
+    margin-right: auto;
+  }
+  
+  

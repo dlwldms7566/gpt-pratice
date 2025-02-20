@@ -4,13 +4,15 @@ import { Header, Sidebar } from "./components/Header";
 import Hero from "./components/Hero";
 import LandingPage from "./components/LandingPage";
 import SignUp from "./components/SignUp";
-import Login from "./components/Login"
+import Login from "./components/Login";
+import Chat from "./components/Chat";
 
 function Layout() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const location = useLocation(); // useLocation()는 Router 안에서만 사용 가능
 
-  const hideSidebar = location.pathname === "/signup" || location.pathname === "/login";
+  const hideSidebar = location.pathname === "/signup" || location.pathname === "/login" || location.pathname === "/chat";
+  const hideHeader = location.pathname === "/chat";
 
   React.useEffect(() => {
     if (hideSidebar) {
@@ -22,7 +24,7 @@ function Layout() {
     <div className={`app-container ${isSidebarOpen ? "sidebar-open" : "sidebar-closed"}`}>
       {!hideSidebar && <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />}
       <div className="content">
-        <Header />
+       {!hideHeader && <Header />}
         <Routes>
           <Route path="/" element={
             <>
@@ -32,8 +34,8 @@ function Layout() {
           } />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/chat" element={<Chat />} />
         </Routes>
-
       </div>
     </div>
   );

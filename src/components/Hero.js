@@ -4,12 +4,14 @@ import { GoArrowUpRight } from "react-icons/go";
 import gptImage from '../assets/gpt_img1.png';
 import { FaPlay, FaPause } from "react-icons/fa";
 import { PiLinkSimpleBold } from "react-icons/pi";
+import { useNavigate } from "react-router-dom";
 
 function Hero({ isSidebarOpen }) {
     const [activeIndex, setActiveIndex] = useState(0);
     const menuRefs = useRef([]);
     const [isPlaying, setIsPlaying] = useState(false);
     const [copied, setCopied] = useState(false);
+    const navigate = useNavigate();
 
     const descriptions = [
         "GPT-4 is more creative and collaborative than ever before. It can generate, edit, and iterate with users on creative and technical writing tasks, such as composing songs, writing screenplays, or learning a user’s writing style.",
@@ -102,7 +104,7 @@ function Hero({ isSidebarOpen }) {
             </h1>
 
             <div className="buttons">
-                <button className="btn1">
+                <button className="btn1" onClick={() => navigate("/chat")}>
                     Try on ChatGPT Plus <GoArrowUpRight className="btn-icon1" />
                 </button>
 

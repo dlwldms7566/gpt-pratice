@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "../styles/LandingPage.module.css";
 import TextSection from "./TextSection"
 import FooterElement from "./FooterElement";
