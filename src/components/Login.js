@@ -28,7 +28,6 @@ function Login() {
                 <h2 className={styles.title}>다시 오신 걸 환영합니다</h2>
                 <form onSubmit={handleSubmit} className={styles.form}>
 
-                    {/* 이메일 입력 */}
                     <div>
                         <input
                             type="email"
@@ -41,7 +40,6 @@ function Login() {
                         />
                     </div>
 
-                    {/* 비밀번호 입력 */}
                     <div>
                         <input
                             type="password"
@@ -54,7 +52,6 @@ function Login() {
                         />
                     </div>
 
-                    {/* 회원가입 버튼 */}
                     <button type="submit" className={styles.button}>
                         로그인
                     </button>

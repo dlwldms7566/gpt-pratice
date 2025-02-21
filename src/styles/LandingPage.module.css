@@ -340,8 +340,6 @@
     transition: max-width 0.5s ease;
 }
 
-
-/* 반응형 */
 @media (max-width: 1200px) {
     .Built {
         grid-template-columns: repeat(4, minmax(180px, 1fr));
@@ -560,9 +558,7 @@
 
 .SidebarOpen .footer_top {
     margin-left: 170px;
-    /* 사이드바 너비만큼 오른쪽으로 이동 */
     gap: 8px;
-    /* gap 값을 줄임 */
 }
 
 .footer_column {

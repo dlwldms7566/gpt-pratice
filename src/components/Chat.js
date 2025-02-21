@@ -29,7 +29,6 @@ function Chat() {
    }, []);
 
    useEffect(() => {
-    // 스크롤을 맨 아래로 이동
     if (chatContainerRef.current) {
         chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
     }
@@ -42,7 +41,6 @@ function Chat() {
       setMessages(newMessages);
       setInput("");
   
-      // Simulating GPT response
       setTimeout(() => {
         setMessages((prev) => [...prev, { sender: "gpt", text: "안녕하세요! 무엇을 도와드릴까요?" }]);
       }, 1000);

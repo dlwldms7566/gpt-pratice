@@ -9,7 +9,7 @@ import Chat from "./components/Chat";
 
 function Layout() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-  const location = useLocation(); // useLocation()는 Router 안에서만 사용 가능
+  const location = useLocation(); 
 
   const hideSidebar = location.pathname === "/signup" || location.pathname === "/login" || location.pathname === "/chat";
   const hideHeader = location.pathname === "/chat";

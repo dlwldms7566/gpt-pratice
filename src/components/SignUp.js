@@ -28,7 +28,7 @@ function Signup() {
             <div className={styles.signupBox}>
                 <h2 className={styles.title}>계정 만들기</h2>
                 <form onSubmit={handleSubmit} className={styles.form}>
-                    {/* 이름 입력 */}
+
                     <div>
                         <input
                             type="text"
@@ -41,7 +41,6 @@ function Signup() {
                         />
                     </div>
 
-                    {/* 이메일 입력 */}
                     <div>
                         <input
                             type="email"
@@ -54,7 +53,6 @@ function Signup() {
                         />
                     </div>
 
-                    {/* 비밀번호 입력 */}
                     <div>
                         <input
                             type="password"
@@ -67,7 +65,6 @@ function Signup() {
                         />
                     </div>
 
-                    {/* 회원가입 버튼 */}
                     <button type="submit" className={styles.button}>
                         회원가입
                     </button>

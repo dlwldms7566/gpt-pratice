@@ -24,11 +24,10 @@ body {
     background: #e7e7e7;
   }
   
-  /* 호버 시 말풍선 추가 */
   .ChatIcon::after {
-    content: "새 채팅"; /* 표시할 텍스트 */
+    content: "새 채팅"; 
     position: absolute;
-    bottom: -45px; /* 아이콘 아래 위치 */
+    bottom: -45px; 
     left: 80%;
     transform: translateX(-50%);
     background: #333;
@@ -40,13 +39,13 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
-    z-index: 1000; /* 다른 요소 위에 표시 */
+    z-index: 1000; 
   }
   
   .ChatIcon:hover::before {
     content: "";
     position: absolute;
-    bottom: -12px;  /* 말풍선과의 간격 */
+    bottom: -12px;  
     left: 50%;
     transform: translateX(-50%);
     border-width: 6px;
@@ -151,17 +150,17 @@ body {
       background: white;
       border-top: 1px solid #ccc;
       width: 100vw;
-      max-width: 750px; /* 최대 너비 설정 */
-      height: 103px; /* 입력창 컨테이너 높이 증가 */
-      margin: 0 auto; /* 가운데 정렬 */
+      max-width: 750px; 
+      height: 103px; 
+      margin: 0 auto; 
       border-radius: 20px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       margin-bottom: 30px;
     }
     
     .ChatInput {
-      align-self: flex-start; /* 왼쪽 정렬 */
-      width: 90%; /* 너비를 적절히 조정 */
+      align-self: flex-start; 
+      width: 90%; 
       padding: 10px;
       border: none;
       border-radius: 5px;
@@ -172,7 +171,7 @@ body {
     }
   
     .ChatInput::placeholder {
-      color: #c1c1c1; /* 원하는 색으로 지정 */
+      color: #c1c1c1; 
   }
   
     .attach {
@@ -340,33 +339,33 @@ body {
   }
   
   .refer span {
-      color: #000000; /* 밑줄과 색깔을 다르게 적용할 부분의 색상 */
-      text-decoration: underline; /* 밑줄 */
+      color: #000000;
+      text-decoration: underline; 
   }
   
   .ChatContainer {
-    width: 100vw; /* 화면 전체 너비 */
-    height: 380px; /* 고정 높이 */
+    width: 100vw;
+    height: 380px; 
     padding: 0px 270px; 
-    overflow-y: auto; /* 내부 스크롤 활성화 */
-    box-sizing: border-box; /* 패딩 포함 크기 계산 */
+    overflow-y: auto; 
+    box-sizing: border-box; 
     position: relative;
     margin: 80px auto 0;
   }
   
   .ChatContainer::-webkit-scrollbar {
-    width: 8px; /* 스크롤바의 너비 */
+    width: 8px; 
     position: absolute;
     right: 0;
   }
   
   .ChatContainer::-webkit-scrollbar-thumb {
-    background-color: rgba(159, 159, 159, 0.2); /* 스크롤바의 색상 */
+    background-color: rgba(159, 159, 159, 0.2); 
     border-radius: 6px;
   }
   
   .ChatContainer::-webkit-scrollbar-track {
-    background-color: transparent; /* 스크롤 트랙 색상 */
+    background-color: transparent; 
   }
   
   .message {
@@ -382,7 +381,7 @@ body {
   }
   
   .message.user {
-    background-color: #f1f1f1; /* 사용자 메시지 배경 */
+    background-color: #f1f1f1; 
     text-align: right;
     margin-left: auto;
   }

@@ -52,7 +52,7 @@ function Hero({ isSidebarOpen }) {
         navigator.clipboard.writeText(window.location.href)
             .then(() => {
                 setCopied(true);
-                setTimeout(() => setCopied(false), 2000); // 2초 후 메시지 숨김
+                setTimeout(() => setCopied(false), 2000); 
             })
             .catch(err => console.error("복사 실패:", err));
     };
@@ -62,7 +62,6 @@ function Hero({ isSidebarOpen }) {
         char === "\n" ? (
             <br key={index} />
         ) : (
-            // 공백도 &nbsp;를 사용하여 보존 (별도의 클래스 없이 동일하게 처리)
             <span key={index} style={{ animationDelay: `${index * 0.05}s` }}>
                 {char === " " ? "\u00A0" : char}
             </span>
@@ -74,7 +73,6 @@ function Hero({ isSidebarOpen }) {
         char === "\n" ? (
             <br key={index} />
         ) : (
-            // 공백도 &nbsp;를 사용하여 보존 (별도의 클래스 없이 동일하게 처리)
             <span key={index} style={{ animationDelay: `${index * 0.05}s` }}>
                 {char === " " ? "\u00A0" : char}
             </span>
@@ -86,7 +84,6 @@ function Hero({ isSidebarOpen }) {
         char === "\n" ? (
             <br key={index} />
         ) : (
-            // 공백도 &nbsp;를 사용하여 보존 (별도의 클래스 없이 동일하게 처리)
             <span key={index} style={{ animationDelay: `${index * 0.05}s` }}>
                 {char === " " ? "\u00A0" : char}
             </span>
