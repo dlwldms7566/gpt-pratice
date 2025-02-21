@@ -45,15 +45,15 @@ export function Sidebar({ isOpen, setIsOpen }) {
     <div>
       <div className={`sidebar ${isOpen ? "open" : ""}`}>
         <ul>
-          <li><a href="#research">Research</a><IoIosArrowForward className="menu-icon" /></li>
-          <li><a href="#safety">Safety</a><IoIosArrowForward className="menu-icon" /></li>
-          <li><a href="#chatgpt">ChatGPT</a><IoIosArrowForward className="menu-icon" /></li>
-          <li><a href="#sora">Sora</a><IoIosArrowForward className="menu-icon" /></li>
-          <li><a href="#api platform">API Platform</a><IoIosArrowForward className="menu-icon" /></li>
-          <li><a href="#for business">For Business</a></li>
-          <li><a href="#stories">Stories</a></li>
-          <li><a href="#company">Company</a><IoIosArrowForward className="menu-icon" /></li>
-          <li><a href="#news">News</a></li>
+          <li><a href="https://openai.com/research/index/">Research</a><IoIosArrowForward className="menu-icon" /></li>
+          <li><a href="https://openai.com/safety/">Safety</a><IoIosArrowForward className="menu-icon" /></li>
+          <li><a href="https://openai.com/chatgpt/overview/">ChatGPT</a><IoIosArrowForward className="menu-icon" /></li>
+          <li><a href="https://openai.com/sora/">Sora</a><IoIosArrowForward className="menu-icon" /></li>
+          <li><a href="https://openai.com/api/">API Platform</a><IoIosArrowForward className="menu-icon" /></li>
+          <li><a href="https://openai.com/business/">For Business</a></li>
+          <li><a href="https://openai.com/stories/">Stories</a></li>
+          <li><a href="#https://openai.com/about/">Company</a><IoIosArrowForward className="menu-icon" /></li>
+          <li><a href="https://openai.com/news/">News</a></li>
         </ul>
         <div className="sidebar-icon-container">
          <LuRepeat2 className="sidebar-bottom-icon" />

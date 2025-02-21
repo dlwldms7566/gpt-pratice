@@ -11,6 +11,7 @@ import { AiOutlineCode } from "react-icons/ai";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import { HiOutlineEye } from "react-icons/hi";
 import { RiGraduationCapLine } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
 
 function Chat() {
 
@@ -19,6 +20,7 @@ function Chat() {
     const [isChatting, setIsChatting] = useState(false);
     const inputRef = useRef(null);
     const chatContainerRef = useRef(null);
+    const navigate = useNavigate();
 
    useEffect(() => {
     if (inputRef.current) {
@@ -52,8 +54,9 @@ function Chat() {
       <button className={styles.btn}>
         ChatGPT <IoIosArrowDown className={styles.btnIcon} />
       </button>
-      <button  className={styles.LogIn}>로그인</button >
-      <button  className={styles.Join}>회원 가입</button >
+
+      <button  className={styles.LogIn} onClick={() => navigate("/login")}>로그인</button >
+      <button  className={styles.Join}onClick={() => navigate("/signup")}>회원 가입</button >
 
      {!isChatting && (
                 <>
