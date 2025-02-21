@@ -105,7 +105,21 @@ function Chat() {
         <button><RiGraduationCapLine className={styles.adviceIcon}/>조언 구하기</button >
         <button>더 보기</button >
       </div>
-      <p className={styles.refer}>ChatGPT에 메시지를 보냄으로써, 당사 <span>이용약관</span>에 동의하고 <span>개인정보 보호 정책</span> 및 이의 <span>한국 부록</span>을 읽은 것으로 간주합니다.</p>
+      <p className={styles.refer}>
+        ChatGPT에 메시지를 보냄으로써, 당사 
+        <a href="https://openai.com/policies/terms-of-use/" target="_blank">
+        <span>이용약관</span>
+        </a>
+        에 동의하고 
+        <a href="https://openai.com/policies/privacy-policy/" target="_blank">
+        <span>개인정보 보호 정책</span>
+        </a>
+         및 이의 
+        <a href="https://openai.com/ko-KR/policies/kr-privacy-policy-addendum/" target="_blank">
+        <span>한국 부록</span>
+        </a>
+         을 읽은 것으로 간주합니다.
+         </p>
       </>
             )}
     </div>
