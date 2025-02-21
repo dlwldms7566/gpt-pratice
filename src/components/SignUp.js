@@ -8,9 +8,8 @@ function Signup() {
         email: "",
         password: "",
     });
-
+    const [isLoading, setIsLoading] = useState(false);
     const navigate = useNavigate();
-
     const handleChange = (e) => {
         setFormData({
             ...formData,
@@ -18,9 +17,37 @@ function Signup() {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("회원가입 정보:", formData);
+        setIsLoading(true);
+        try {
+            const requestData = {
+                email: formData.email,
+                password: formData.password,
+                name: formData.name
+            };
+            const response = await fetch('http://52.79.241.242:8080/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(requestData),
+            });
+
+            const responseData = await response.json();
+            console.log(responseData)
+            if (response.ok) {
+                alert('회원가입 성공! 로그인해주세요.');
+                navigate('/signin');
+            } else {
+                alert(`회원가입 실패: ${responseData.message || '알 수 없는 오류가 발생했습니다.'}`);
+            }
+        } catch (error) {
+            console.error('회원가입 에러:', error);
+            alert('회원가입 처리 중 오류가 발생했습니다.');
+        } finally {
+            setIsLoading(false);
+        }
     };
 
     return (
@@ -77,11 +104,11 @@ function Signup() {
                 </p>
                 <div className={styles.bottom}>
                     <a className={styles.loginLink} href="https://openai.com/policies/terms-of-use/">
-                    <span>이용약관     </span>
+                        <span>이용약관     </span>
                     </a>
                     |
                     <a className={styles.loginLink} href="https://openai.com/policies/privacy-policy/">
-                    <span>     개인정보 보호 정책</span>
+                        <span>     개인정보 보호 정책</span>
                     </a>
                 </div>
             </div>
