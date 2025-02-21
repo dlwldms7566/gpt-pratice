@@ -524,10 +524,14 @@ header {
 .menu-line {
   position: absolute;
   bottom: 5px;
-  width: 73.5vw;
+  width: 75vw;
   left: 1vw;
   height: 1px;
   background-color: #cccccc;
+}
+
+.hero.expanded .menu-line {
+  width: 87vw;
 }
 
 .active-indicator {
