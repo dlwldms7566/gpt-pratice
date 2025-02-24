@@ -26,14 +26,14 @@ function Signup() {
                 password: formData.password,
                 name: formData.name
             };
-            const response = await fetch('http://52.79.241.242:8080/', {
+            const response = await fetch('http://172.16.41.240:8080/auth/signup', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(requestData),
             });
-
+            console.log(requestData)
             const responseData = await response.json();
             console.log(responseData)
             if (response.ok) {

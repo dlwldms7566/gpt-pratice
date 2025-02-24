@@ -24,7 +24,7 @@ function Login() {
                 email: formData.email, 
                 password: formData.password 
             };
-            const response = await fetch('http://52.79.241.242:8080/', {
+            const response = await fetch('http://172.16.41.240:8080/auth/signin', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ function Login() {
             });
 
             const responseData = await response.json();
-
+            console.log(responseData)
             if (response.ok) {
                 localStorage.setItem('token', responseData.data.token);
                 // 상태 초기화
